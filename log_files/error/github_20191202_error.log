@@ -1,0 +1,6 @@
+time="2019-12-02T17:46:11.965419+07:00" level=error msg="Co loi xay ra" file=/Users/ryan/Desktop/backend-github-trending/main.go line=25
+time="2019-12-02T17:47:46.343448+07:00" level=error msg="Co loi xay ra" file=/Users/ryan/Desktop/backend-github-trending/main.go line=27
+time="2019-12-02T17:48:10.746336+07:00" level=error msg="Co loi xay ra" file=/Users/ryan/Desktop/backend-github-trending/main.go line=30
+time="2019-12-02T17:52:38.980069+07:00" level=error msg="Co loi xay ra" file=/Users/ryan/Desktop/backend-github-trending/main.go line=37
+time="2019-12-02T17:53:04.317198+07:00" level=error msg="Co loi xay ra" file=/Users/ryan/Desktop/backend-github-trending/main.go line=37
+time="2019-12-02T17:53:34.744428+07:00" level=error msg="sql: no rows in result set" file=/Users/ryan/Desktop/backend-github-trending/main.go line=34
