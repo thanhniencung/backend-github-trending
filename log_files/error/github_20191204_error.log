@@ -1,0 +1,6 @@
+time="2019-12-04T16:24:45.924714+07:00" level=error msg="pq: duplicate key value violates unique constraint \"users_pkey\"" file=/Users/ryan/Desktop/backend-github-trending/repository/repo_impl/user_repo_impl.go line=34
+time="2019-12-04T16:24:59.148898+07:00" level=error msg="pq: duplicate key value violates unique constraint \"users_pkey\"" file=/Users/ryan/Desktop/backend-github-trending/repository/repo_impl/user_repo_impl.go line=34
+time="2019-12-04T16:29:00.672015+07:00" level=error msg="pq: duplicate key value violates unique constraint \"users_email_key\"" file=/Users/ryan/Desktop/backend-github-trending/repository/repo_impl/user_repo_impl.go line=34
+time="2019-12-04T16:29:15.194144+07:00" level=error msg="Key: 'ReqSignUp.FullName' Error:Field validation for 'FullName' failed on the 'required' tag" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=32
+time="2019-12-04T16:34:43.651536+07:00" level=error msg="pq: duplicate key value violates unique constraint \"users_email_key\"" file=/Users/ryan/Desktop/backend-github-trending/repository/repo_impl/user_repo_impl.go line=34
+time="2019-12-04T16:35:32.582077+07:00" level=error msg="pq: duplicate key value violates unique constraint \"users_email_key\"" file=/Users/ryan/Desktop/backend-github-trending/repository/repo_impl/user_repo_impl.go line=34
