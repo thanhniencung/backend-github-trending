@@ -1,0 +1,1 @@
+time="2019-12-06T16:13:54.492163+07:00" level=error msg="code=400, message=EOF" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=82

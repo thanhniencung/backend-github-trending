@@ -6,7 +6,6 @@ import (
 	req "backend-github-trending/model/req"
 	"backend-github-trending/repository"
 	securiry "backend-github-trending/security"
-	"fmt"
 	validator "github.com/go-playground/validator/v10"
 	uuid "github.com/google/uuid"
 	"github.com/labstack/echo"
@@ -117,6 +116,7 @@ func (u *UserHandler) HandleSignIn(c echo.Context) error {
 		})
 	}
 
+	user.Password = ""
 	return c.JSON(http.StatusOK, model.Response{
 		StatusCode: http.StatusOK,
 		Message:    "Xử lý thành công",
