@@ -5,7 +5,7 @@ import (
 	"backend-github-trending/model"
 	req "backend-github-trending/model/req"
 	"backend-github-trending/repository"
-	securiry "backend-github-trending/security"
+	security "backend-github-trending/security"
 	validator "github.com/go-playground/validator/v10"
 	uuid "github.com/google/uuid"
 	"github.com/labstack/echo"
@@ -37,7 +37,7 @@ func (u *UserHandler) HandleSignUp(c echo.Context) error {
 		})
 	}
 
-	hash := securiry.HashAndSalt([]byte(req.Password))
+	hash := security.HashAndSalt([]byte(req.Password))
 	role := model.MEMBER.String()
 
 	userId, err := uuid.NewUUID()
@@ -107,7 +107,7 @@ func (u *UserHandler) HandleSignIn(c echo.Context) error {
 	}
 
 	// check pass
-	isTheSame := securiry.ComparePasswords(user.Password, []byte(req.Password))
+	isTheSame := security.ComparePasswords(user.Password, []byte(req.Password))
 	if !isTheSame {
 		return c.JSON(http.StatusUnauthorized, model.Response{
 			StatusCode: http.StatusUnauthorized,
