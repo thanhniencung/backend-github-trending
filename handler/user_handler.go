@@ -6,6 +6,7 @@ import (
 	req "backend-github-trending/model/req"
 	"backend-github-trending/repository"
 	security "backend-github-trending/security"
+	"github.com/dgrijalva/jwt-go"
 	validator "github.com/go-playground/validator/v10"
 	uuid "github.com/google/uuid"
 	"github.com/labstack/echo"
@@ -68,7 +69,17 @@ func (u *UserHandler) HandleSignUp(c echo.Context) error {
 		})
 	}
 
-	user.Password = ""
+	token, err := security.GenToken(user)
+	if err != nil {
+		log.Error(err)
+		return c.JSON(http.StatusInternalServerError, model.Response{
+			StatusCode: http.StatusInternalServerError,
+			Message:    err.Error(),
+			Data:       nil,
+		})
+	}
+	user.Token = token
+
 	return c.JSON(http.StatusOK, model.Response{
 		StatusCode: http.StatusOK,
 		Message:    "Xử lý thành công",
@@ -88,13 +99,13 @@ func (u *UserHandler) HandleSignIn(c echo.Context) error {
 	}
 
 	validate := validator.New()
-	if err := validate.Struct(req); err != nil {
-		log.Error(err.Error())
-		return c.JSON(http.StatusBadRequest, model.Response{
-			StatusCode: http.StatusBadRequest,
-			Message:    err.Error(),
-			Data:       nil,
-		})
+		if err := validate.Struct(req); err != nil {
+			log.Error(err.Error())
+			return c.JSON(http.StatusBadRequest, model.Response{
+				StatusCode: http.StatusBadRequest,
+				Message:    err.Error(),
+				Data:       nil,
+			})
 	}
 
 	user, err := u.UserRepo.CheckLogin(c.Request().Context(), req)
@@ -116,10 +127,30 @@ func (u *UserHandler) HandleSignIn(c echo.Context) error {
 		})
 	}
 
-	user.Password = ""
+	token, err := security.GenToken(user)
+	if err != nil {
+		log.Error(err)
+		return c.JSON(http.StatusInternalServerError, model.Response{
+			StatusCode: http.StatusInternalServerError,
+			Message:    err.Error(),
+			Data:       nil,
+		})
+	}
+	user.Token = token
+
 	return c.JSON(http.StatusOK, model.Response{
 		StatusCode: http.StatusOK,
 		Message:    "Xử lý thành công",
 		Data:       user,
+	})
+}
+
+func (u *UserHandler) Profile(c echo.Context) error {
+	tokenData := c.Get("user").(*jwt.Token)
+	claims := tokenData.Claims.(*model.JwtCustomClaims)
+
+	return c.JSON(http.StatusOK, echo.Map{
+		"userId": claims.UserId,
+		"role": claims.Role,
 	})
 }
