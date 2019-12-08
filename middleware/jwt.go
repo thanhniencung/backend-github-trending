@@ -9,7 +9,7 @@ import (
 
 func JWTMiddleware() echo.MiddlewareFunc {
 	config := middleware.JWTConfig{
-		Claims: &model.JwtCustomClaims{},
+		Claims:     &model.JwtCustomClaims{},
 		SigningKey: []byte(security.JWT_KEY),
 	}
 

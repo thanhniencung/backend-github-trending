@@ -7,7 +7,6 @@ import (
 	"backend-github-trending/repository"
 	security "backend-github-trending/security"
 	"github.com/dgrijalva/jwt-go"
-	validator "github.com/go-playground/validator/v10"
 	uuid "github.com/google/uuid"
 	"github.com/labstack/echo"
 	"net/http"
@@ -28,8 +27,7 @@ func (u *UserHandler) HandleSignUp(c echo.Context) error {
 		})
 	}
 
-	validate := validator.New()
-	if err := validate.Struct(req); err != nil {
+	if err := c.Validate(req); err != nil {
 		log.Error(err.Error())
 		return c.JSON(http.StatusBadRequest, model.Response{
 			StatusCode: http.StatusBadRequest,
@@ -52,12 +50,12 @@ func (u *UserHandler) HandleSignUp(c echo.Context) error {
 	}
 
 	user := model.User{
-		UserId:    userId.String(),
-		FullName:  req.FullName,
+		UserId:   userId.String(),
+		FullName: req.FullName,
 		Email:    req.Email,
-		Password:  hash,
-		Role:      role,
-		Token:     "",
+		Password: hash,
+		Role:     role,
+		Token:    "",
 	}
 
 	user, err = u.UserRepo.SaveUser(c.Request().Context(), user)
@@ -98,14 +96,13 @@ func (u *UserHandler) HandleSignIn(c echo.Context) error {
 		})
 	}
 
-	validate := validator.New()
-		if err := validate.Struct(req); err != nil {
-			log.Error(err.Error())
-			return c.JSON(http.StatusBadRequest, model.Response{
-				StatusCode: http.StatusBadRequest,
-				Message:    err.Error(),
-				Data:       nil,
-			})
+	if err := c.Validate(req); err != nil {
+		log.Error(err.Error())
+		return c.JSON(http.StatusBadRequest, model.Response{
+			StatusCode: http.StatusBadRequest,
+			Message:    err.Error(),
+			Data:       nil,
+		})
 	}
 
 	user, err := u.UserRepo.CheckLogin(c.Request().Context(), req)
@@ -151,6 +148,6 @@ func (u *UserHandler) Profile(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, echo.Map{
 		"userId": claims.UserId,
-		"role": claims.Role,
+		"role":   claims.Role,
 	})
 }

@@ -7,7 +7,7 @@ import (
 )
 
 type API struct {
-	Echo *echo.Echo
+	Echo        *echo.Echo
 	UserHandler handler.UserHandler
 }
 

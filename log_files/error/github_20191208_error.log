@@ -1,0 +1,9 @@
+time="2019-12-08T20:46:53.148113+07:00" level=error msg="Email là bắt buộc" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100
+time="2019-12-08T20:47:01.643429+07:00" level=error msg="Email là bắt buộc" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100
+time="2019-12-08T20:47:21.776341+07:00" level=error msg="Email là bắt buộc" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100
+time="2019-12-08T20:47:22.995722+07:00" level=error msg="Email là bắt buộc" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100
+time="2019-12-08T20:47:24.119357+07:00" level=error msg="Email là bắt buộc" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100
+time="2019-12-08T20:48:46.416753+07:00" level=error msg="Email là bắt buộc" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100
+time="2019-12-08T20:48:47.635617+07:00" level=error msg="Email là bắt buộc" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100
+time="2019-12-08T20:49:34.216004+07:00" level=error msg="Email là bắt buộc \n Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100
+time="2019-12-08T21:15:21.334108+07:00" level=error msg="Email là bắt buộc \n Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/Desktop/backend-github-trending/handler/user_handler.go line=100

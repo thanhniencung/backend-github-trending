@@ -9,7 +9,7 @@ import (
 
 func IsAdmin() echo.MiddlewareFunc {
 	return func(next echo.HandlerFunc) echo.HandlerFunc {
-		return  func(c echo.Context) error {
+		return func(c echo.Context) error {
 			// handle logic
 			req := req.ReqSignIn{}
 			if err := c.Bind(&req); err != nil {
