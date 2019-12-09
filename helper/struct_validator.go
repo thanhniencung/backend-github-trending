@@ -20,6 +20,7 @@ func NewStructValidator() *StructValidator {
 	translator := en.New()
 	uni := ut.New(translator, translator)
 	trans, _ := uni.GetTranslator("en")
+
 	return &StructValidator{
 		Validator: validator.New(),
 		Uni:       uni,

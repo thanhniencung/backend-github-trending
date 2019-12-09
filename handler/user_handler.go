@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"backend-github-trending/banana"
 	"backend-github-trending/log"
 	"backend-github-trending/model"
 	req "backend-github-trending/model/req"
@@ -146,8 +147,26 @@ func (u *UserHandler) Profile(c echo.Context) error {
 	tokenData := c.Get("user").(*jwt.Token)
 	claims := tokenData.Claims.(*model.JwtCustomClaims)
 
-	return c.JSON(http.StatusOK, echo.Map{
-		"userId": claims.UserId,
-		"role":   claims.Role,
+	user, err := u.UserRepo.SelectUserById(c.Request().Context(), claims.UserId)
+	if err != nil {
+		if err == banana.UserNotFound {
+			return c.JSON(http.StatusNotFound, model.Response{
+				StatusCode: http.StatusNotFound,
+				Message:    err.Error(),
+				Data:       nil,
+			})
+		}
+
+		return c.JSON(http.StatusInternalServerError, model.Response{
+			StatusCode: http.StatusInternalServerError,
+			Message:    err.Error(),
+			Data:       nil,
+		})
+	}
+
+	return c.JSON(http.StatusOK, model.Response{
+		StatusCode: http.StatusOK,
+		Message:    "Xử lý thành công",
+		Data:       user,
 	})
 }
