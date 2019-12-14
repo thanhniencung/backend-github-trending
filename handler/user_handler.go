@@ -189,9 +189,9 @@ func (u UserHandler) UpdateProfile(c echo.Context) error {
 	token := c.Get("user").(*jwt.Token)
 	claims := token.Claims.(*model.JwtCustomClaims)
 	user := model.User{
-		UserId:    claims.UserId,
-		FullName:  req.FullName,
-		Email:     req.Email,
+		UserId:   claims.UserId,
+		FullName: req.FullName,
+		Email:    req.Email,
 	}
 
 	user, err = u.UserRepo.UpdateUser(c.Request().Context(), user)
@@ -205,6 +205,6 @@ func (u UserHandler) UpdateProfile(c echo.Context) error {
 	return c.JSON(http.StatusCreated, model.Response{
 		StatusCode: http.StatusCreated,
 		Message:    "Xử lý thành công",
-		Data: user,
+		Data:       user,
 	})
 }

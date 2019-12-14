@@ -7,8 +7,10 @@ import (
 	log "backend-github-trending/log"
 	"backend-github-trending/repository/repo_impl"
 	"backend-github-trending/router"
+	"fmt"
 	"github.com/labstack/echo"
 	"os"
+	"time"
 )
 
 func init() {
@@ -38,11 +40,31 @@ func main() {
 		UserRepo: repo_impl.NewUserRepo(sql),
 	}
 
+	repoHandler := handler.RepoHandler{
+		GithubRepo: repo_impl.NewGithubRepo(sql),
+	}
+
 	api := router.API{
 		Echo:        e,
 		UserHandler: userHandler,
+		RepoHandler: repoHandler,
 	}
 	api.SetupRouter()
 
+	go scheduleUpdateTrending(15 * time.Second, repoHandler)
+
 	e.Logger.Fatal(e.Start(":3000"))
+}
+
+func scheduleUpdateTrending(timeSchedule time.Duration, handler handler.RepoHandler) {
+	ticker := time.NewTicker(timeSchedule)
+	go func() {
+		for {
+			select {
+			case <- ticker.C:
+				fmt.Println("Checking from github...")
+				helper.CrawlRepo(handler.GithubRepo)
+			}
+		}
+	}()
 }

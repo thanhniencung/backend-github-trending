@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3573c891-e0d9-4170-bbd7-27582347b2c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/req/req_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banana/err_repo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handler/repo_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper/job_queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper/job_repo_crawl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/github_repo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/github_repo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banana/err_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/banana/err_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handler/user_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/repo_impl/user_repo_impl.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repo_impl/user_repo_impl.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/user_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/user_repo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/api.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +46,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/handler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/handler" />
+      <recent name="$PROJECT_DIR$/banana" />
+      <recent name="$PROJECT_DIR$/repository/repo_impl" />
+      <recent name="$PROJECT_DIR$/helper" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
