@@ -51,7 +51,7 @@ func main() {
 	}
 	api.SetupRouter()
 
-	go scheduleUpdateTrending(15 * time.Second, repoHandler)
+	go scheduleUpdateTrending(360 * time.Second, repoHandler)
 
 	e.Logger.Fatal(e.Start(":3000"))
 }

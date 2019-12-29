@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3573c891-e0d9-4170-bbd7-27582347b2c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/banana/err_repo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handler/repo_handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/job_queue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/job_repo_crawl.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/github_repo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/github_repo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/req/req_bookmark.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banana/err_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/banana/err_user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/user_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banana/err_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/banana/err_repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/repo_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/repo_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/job_repo_crawl.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper/job_repo_crawl.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/repo_impl/user_repo_impl.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repo_impl/user_repo_impl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/1_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/1_init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/github_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/github_repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/api.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +74,10 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1496" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577609188047">
+      <screen x="-1920" y="23" width="1920" height="1000" />
+    </state>
+    <state x="-1496" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027/-1920.23.1920.1000@-1920.23.1920.1000" timestamp="1577609188047" />
     <state x="100" y="123" width="1480" height="770" key="DiffContextDialog" timestamp="1575814620393">
       <screen x="0" y="23" width="1680" height="970" />
     </state>
