@@ -16,7 +16,10 @@ type RepoHandler struct {
 }
 
 func (r RepoHandler) RepoTrending(c echo.Context) error {
-	repos, _ := r.GithubRepo.SelectRepos(c.Request().Context(), 25)
+	token := c.Get("user").(*jwt.Token)
+	claims := token.Claims.(*model.JwtCustomClaims)
+
+	repos, _ := r.GithubRepo.SelectRepos(c.Request().Context(), claims.UserId, 25)
 	return c.JSON(http.StatusOK, model.Response{
 		StatusCode: http.StatusOK,
 		Message:    "Xử lý thành công",

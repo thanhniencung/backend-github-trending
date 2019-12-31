@@ -1,1 +1,2 @@
 time="2019-12-31T14:39:37.636794+07:00" level=error msg="FullName là bắt buộc" file=/Users/ryan/workspace/code4func/backend-github-trending/handler/user_handler.go line=32
+time="2019-12-31T19:27:50.265596+07:00" level=error msg="sql: Scan error on column index 10, name \"bookmarked\": sql/driver: couldn't convert <nil> (<nil>) into type bool" file=/Users/ryan/workspace/code4func/backend-github-trending/repository/repo_impl/github_repo_impl.go line=83

@@ -64,9 +64,22 @@ func (g GithubRepoImpl) SaveRepo(context context.Context, repo model.GithubRepo)
 	return repo, nil
 }
 
-func (g GithubRepoImpl) SelectRepos(context context.Context, limit int) ([]model.GithubRepo, error) {
+func (g GithubRepoImpl) SelectRepos(context context.Context, userId string, limit int) ([]model.GithubRepo, error) {
 	var repos []model.GithubRepo
-	err := g.sql.Db.SelectContext(context, &repos, "SELECT * FROM repos ORDER BY updated_at ASC LIMIT 25")
+	err := g.sql.Db.SelectContext(context, &repos,
+		`
+			SELECT 
+				repos.name, repos.description, repos.url, repos.color, repos.lang, 
+				repos.fork, repos.stars, repos.stars_today, repos.build_by, repos.updated_at, 
+				COALESCE(repos.name = bookmarks.repo_name, FALSE) = TRUE as bookmarked
+			FROM repos
+			FULL OUTER JOIN bookmarks 
+			ON repos.name = bookmarks.repo_name AND 
+			   bookmarks.user_id=$1  
+			WHERE repos.name IS NOT NULL 
+			ORDER BY updated_at ASC LIMIT $2
+		`, userId, limit)
+
 	if err != nil {
 		log.Error(err.Error())
 		return repos, err

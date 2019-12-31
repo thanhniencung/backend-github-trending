@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3573c891-e0d9-4170-bbd7-27582347b2c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/1_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/1_init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/repo_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/repo_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_files/error/github_20191231_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log_files/error/github_20191231_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/github_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/github_repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/github_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/github_repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +49,6 @@
       <recent name="$PROJECT_DIR$/repository/repo_impl" />
       <recent name="$PROJECT_DIR$/helper" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="backend-github-trending" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">

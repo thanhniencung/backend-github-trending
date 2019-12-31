@@ -12,6 +12,7 @@ type GithubRepo struct {
 	Stars       string    `json:"stars" db:"stars,omitempty"`
 	StarsToday  string    `json:"starsToday" db:"stars_today,omitempty"`
 	BuildBy     string    `json:"buildBy" db:"build_by,omitempty"`
+	Bookmarked  bool      `json:"bookmarked"`
 	CreatedAt   time.Time `json:"-" db:"created_at,omitempty"`
 	UpdatedAt   time.Time `json:"-" db:"updated_at,omitempty"`
 }
