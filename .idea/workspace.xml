@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3573c891-e0d9-4170-bbd7-27582347b2c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,12 +73,16 @@
       <screen x="-1920" y="23" width="1920" height="1000" />
     </state>
     <state x="-1496" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027/-1920.23.1920.1000@-1920.23.1920.1000" timestamp="1577609188047" />
+    <state x="-1247" y="333" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577892853533">
+      <screen x="-1920" y="23" width="1920" height="1000" />
+    </state>
+    <state x="-1247" y="333" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027/-1920.23.1920.1000@-1920.23.1920.1000" timestamp="1577892853533" />
     <state x="100" y="123" width="1480" height="770" key="DiffContextDialog" timestamp="1575814620393">
       <screen x="0" y="23" width="1680" height="970" />
     </state>
     <state x="100" y="123" width="1480" height="770" key="DiffContextDialog/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1575814620393" />
-    <state x="6" y="29" width="1668" height="958" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577867909832">
-      <screen x="0" y="23" width="1680" height="970" />
+    <state x="6" y="29" width="1668" height="958" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577893574387">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="6" y="29" width="1668" height="958" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1577867909832" />
     <state x="-1343" y="243" width="766" height="697" key="search.everywhere.popup" timestamp="1577796265833">

@@ -14,13 +14,14 @@ import (
 )
 
 func init() {
-	os.Setenv("APP_NAME", "github")
+	fmt.Println(">>>>", os.Getenv("APP_NAME"))
+	//os.Setenv("APP_NAME", "github")
 	log.InitLogger(false)
 }
 
 func main() {
 	sql := &db.Sql{
-		Host:     "localhost",
+		Host:     "host.docker.internal", //localhost
 		Port:     5432,
 		UserName: "ryan",
 		Password: "postgres",
