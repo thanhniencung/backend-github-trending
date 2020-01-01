@@ -51,7 +51,7 @@ func main() {
 	}
 	api.SetupRouter()
 
-	go scheduleUpdateTrending(360 * time.Second, repoHandler)
+	go scheduleUpdateTrending(360*time.Second, repoHandler)
 
 	e.Logger.Fatal(e.Start(":3000"))
 }
@@ -61,7 +61,7 @@ func scheduleUpdateTrending(timeSchedule time.Duration, handler handler.RepoHand
 	go func() {
 		for {
 			select {
-			case <- ticker.C:
+			case <-ticker.C:
 				fmt.Println("Checking from github...")
 				helper.CrawlRepo(handler.GithubRepo)
 			}

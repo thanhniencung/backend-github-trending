@@ -101,7 +101,7 @@ func (rp *RepoProcess) Process() {
 	}
 
 	// Neu tim thấy thì update
-	if  rp.repo.Stars != cacheRepo.Stars ||
+	if rp.repo.Stars != cacheRepo.Stars ||
 		rp.repo.StarsToday != cacheRepo.StarsToday ||
 		rp.repo.Fork != cacheRepo.Fork {
 		fmt.Println("Updated: ", rp.repo.Name)

@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3573c891-e0d9-4170-bbd7-27582347b2c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/repo_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/repo_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_files/error/github_20191231_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log_files/error/github_20191231_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/github_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/github_repo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/github_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/github_repo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repo_impl/github_repo_impl.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,13 +74,14 @@
       <screen x="0" y="23" width="1680" height="970" />
     </state>
     <state x="100" y="123" width="1480" height="770" key="DiffContextDialog/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1575814620393" />
-    <state x="100" y="123" width="1480" height="770" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575814004223">
+    <state x="6" y="29" width="1668" height="958" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577867909832">
       <screen x="0" y="23" width="1680" height="970" />
     </state>
-    <state x="100" y="123" width="1480" height="770" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1575814004223" />
-    <state x="505" y="236" width="670" height="676" key="search.everywhere.popup" timestamp="1575450942565">
-      <screen x="0" y="23" width="1680" height="970" />
+    <state x="6" y="29" width="1668" height="958" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1577867909832" />
+    <state x="-1343" y="243" width="766" height="697" key="search.everywhere.popup" timestamp="1577796265833">
+      <screen x="-1920" y="23" width="1920" height="1000" />
     </state>
+    <state x="-1343" y="243" width="766" height="697" key="search.everywhere.popup/0.23.1680.1027/-1920.23.1920.1000@-1920.23.1920.1000" timestamp="1577796265833" />
     <state x="505" y="236" width="670" height="676" key="search.everywhere.popup/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1575450942565" />
   </component>
 </project>

@@ -71,7 +71,7 @@ func (g GithubRepoImpl) SelectRepos(context context.Context, userId string, limi
 			SELECT 
 				repos.name, repos.description, repos.url, repos.color, repos.lang, 
 				repos.fork, repos.stars, repos.stars_today, repos.build_by, repos.updated_at, 
-				COALESCE(repos.name = bookmarks.repo_name, FALSE) = TRUE as bookmarked
+				COALESCE(repos.name = bookmarks.repo_name, FALSE) as bookmarked
 			FROM repos
 			FULL OUTER JOIN bookmarks 
 			ON repos.name = bookmarks.repo_name AND 
