@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3573c891-e0d9-4170-bbd7-27582347b2c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
@@ -49,6 +47,19 @@
       <recent name="$PROJECT_DIR$/helper" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="pro" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="pro" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile.pro" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -81,6 +92,22 @@
       <screen x="0" y="23" width="1680" height="970" />
     </state>
     <state x="100" y="123" width="1480" height="770" key="DiffContextDialog/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1575814620393" />
+    <state width="1638" height="261" key="GridCell.Tab.0.bottom" timestamp="1577947848864">
+      <screen x="0" y="23" width="1680" height="970" />
+    </state>
+    <state width="1638" height="261" key="GridCell.Tab.0.bottom/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1577947848864" />
+    <state width="1638" height="261" key="GridCell.Tab.0.center" timestamp="1577947848864">
+      <screen x="0" y="23" width="1680" height="970" />
+    </state>
+    <state width="1638" height="261" key="GridCell.Tab.0.center/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1577947848864" />
+    <state width="1638" height="261" key="GridCell.Tab.0.left" timestamp="1577947848863">
+      <screen x="0" y="23" width="1680" height="970" />
+    </state>
+    <state width="1638" height="261" key="GridCell.Tab.0.left/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1577947848863" />
+    <state width="1638" height="261" key="GridCell.Tab.0.right" timestamp="1577947848864">
+      <screen x="0" y="23" width="1680" height="970" />
+    </state>
+    <state width="1638" height="261" key="GridCell.Tab.0.right/0.23.1680.970/-1920.23.1920.1057@0.23.1680.970" timestamp="1577947848864" />
     <state x="6" y="29" width="1668" height="958" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577893574387">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
