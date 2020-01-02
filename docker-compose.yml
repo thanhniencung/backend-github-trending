@@ -6,7 +6,7 @@ services:
     build: .
     image: web-service:1.0
     ports:
-      - "3000:3000"
+      - "8000:8000"
     environment:
       - APP_NAME=github
 
