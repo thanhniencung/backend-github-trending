@@ -54,7 +54,7 @@ func main() {
 
 	go scheduleUpdateTrending(360*time.Second, repoHandler)
 
-	e.Logger.Fatal(e.Start(":3000"))
+	e.Logger.Fatal(e.Start(":8000"))
 }
 
 func scheduleUpdateTrending(timeSchedule time.Duration, handler handler.RepoHandler) {
