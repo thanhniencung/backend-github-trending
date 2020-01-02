@@ -34,6 +34,7 @@ CREATE TABLE "bookmarks" (
 
 --ALTER TABLE "bookmarks" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("user_id");
 -- p0EE6bmdpH5cpLeu
+--https://cloud.google.com/vpc/docs/using-firewalls#creating_firewall_rules
 ALTER TABLE "bookmarks" ADD FOREIGN KEY ("repo_name") REFERENCES "repos" ("name");
 
 -- +migrate Down
