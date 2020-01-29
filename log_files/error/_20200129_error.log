@@ -1,0 +1,2 @@
+time="2020-01-29T22:05:01.598347+07:00" level=error msg="FullName là bắt buộc \n Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/workspace/code4func/backend-github-trending/handler/user_handler.go line=32
+time="2020-01-29T22:05:07.707692+07:00" level=error msg="Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/workspace/code4func/backend-github-trending/handler/user_handler.go line=32

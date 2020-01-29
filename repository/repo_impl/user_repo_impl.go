@@ -18,12 +18,12 @@ type UserRepoImpl struct {
 }
 
 func NewUserRepo(sql *db.Sql) repository.UserRepo {
-	return &UserRepoImpl{
+	return UserRepoImpl{
 		sql: sql,
 	}
 }
 
-func (u *UserRepoImpl) SaveUser(context context.Context, user model.User) (model.User, error) {
+func (u UserRepoImpl) SaveUser(context context.Context, user model.User) (model.User, error) {
 	statement := `
 		INSERT INTO users(user_id, email, password, role, full_name, created_at, updated_at)
 		VALUES(:user_id, :email, :password, :role, :full_name, :created_at, :updated_at)
@@ -45,7 +45,7 @@ func (u *UserRepoImpl) SaveUser(context context.Context, user model.User) (model
 	return user, nil
 }
 
-func (u *UserRepoImpl) CheckLogin(context context.Context, loginReq req.ReqSignIn) (model.User, error) {
+func (u UserRepoImpl) CheckLogin(context context.Context, loginReq req.ReqSignIn) (model.User, error) {
 	var user = model.User{}
 	err := u.sql.Db.GetContext(context, &user, "SELECT * FROM users WHERE email=$1", loginReq.Email)
 
@@ -61,7 +61,7 @@ func (u *UserRepoImpl) CheckLogin(context context.Context, loginReq req.ReqSignI
 
 }
 
-func (u *UserRepoImpl) SelectUserById(context context.Context, userId string) (model.User, error) {
+func (u UserRepoImpl) SelectUserById(context context.Context, userId string) (model.User, error) {
 	var user model.User
 
 	err := u.sql.Db.GetContext(context, &user,
@@ -78,7 +78,7 @@ func (u *UserRepoImpl) SelectUserById(context context.Context, userId string) (m
 	return user, nil
 }
 
-func (u *UserRepoImpl) UpdateUser(context context.Context, user model.User) (model.User, error) {
+func (u UserRepoImpl) UpdateUser(context context.Context, user model.User) (model.User, error) {
 	sqlStatement := `
 		UPDATE users
 		SET 

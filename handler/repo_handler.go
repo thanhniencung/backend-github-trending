@@ -9,6 +9,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/labstack/echo"
 	"net/http"
+	"strings"
 )
 
 type RepoHandler struct {
@@ -20,6 +21,10 @@ func (r RepoHandler) RepoTrending(c echo.Context) error {
 	claims := token.Claims.(*model.JwtCustomClaims)
 
 	repos, _ := r.GithubRepo.SelectRepos(c.Request().Context(), claims.UserId, 25)
+	for i, repo := range repos {
+		repos[i].Contributors = strings.Split(repo.BuildBy, ",")
+	}
+
 	return c.JSON(http.StatusOK, model.Response{
 		StatusCode: http.StatusOK,
 		Message:    "Xử lý thành công",
