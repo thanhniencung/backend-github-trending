@@ -1,0 +1,5 @@
+time="2020-01-31T13:30:25.902594+07:00" level=error msg="pq: duplicate key value violates unique constraint \"users_email_key\"" file=/Users/ryan/workspace/code4func/backend-github-trending/repository/repo_impl/user_repo_impl.go line=36
+time="2020-01-31T13:37:14.580223+07:00" level=error msg="Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/workspace/code4func/backend-github-trending/handler/user_handler.go line=101
+time="2020-01-31T13:37:50.271958+07:00" level=error msg="Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/workspace/code4func/backend-github-trending/handler/user_handler.go line=101
+time="2020-01-31T13:38:38.349423+07:00" level=error msg="Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/workspace/code4func/backend-github-trending/handler/user_handler.go line=101
+time="2020-01-31T14:05:39.360534+07:00" level=error msg="pq: duplicate key value violates unique constraint \"users_email_key\"" file=/Users/ryan/workspace/code4func/backend-github-trending/repository/repo_impl/user_repo_impl.go line=36

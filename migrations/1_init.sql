@@ -26,9 +26,10 @@ CREATE TABLE "repos" (
 CREATE TABLE "bookmarks" (
   "bid" text PRIMARY KEY,
   "user_id" text,
-  "repo_name" text UNIQUE,
+  "repo_name" text,
   "created_at" TIMESTAMPTZ NOT NULL,
-  "updated_at" TIMESTAMPTZ NOT NULL
+  "updated_at" TIMESTAMPTZ NOT NULL,
+  unique (user_id, repo_name)
 );
 
 

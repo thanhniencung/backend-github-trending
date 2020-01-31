@@ -125,7 +125,7 @@ func (g GithubRepoImpl) SelectAllBookmarks(context context.Context, userId strin
 		`SELECT 
 					repos.name, repos.description, repos.url, 
 					repos.color, repos.lang, repos.fork, repos.stars, 
-					repos.stars_today, repos.build_by
+					repos.stars_today, repos.build_by, true as bookmarked
 				FROM bookmarks 
 				INNER JOIN repos
 				ON bookmarks.user_id=$1 AND repos.name = bookmarks.repo_name`, userId)

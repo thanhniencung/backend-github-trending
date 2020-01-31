@@ -40,6 +40,10 @@ func (r RepoHandler) SelectBookmarks(c echo.Context) error {
 		c.Request().Context(),
 		claims.UserId)
 
+	for i, repo := range repos {
+		repos[i].Contributors = strings.Split(repo.BuildBy, ",")
+	}	
+
 	return c.JSON(http.StatusOK, model.Response{
 		StatusCode: http.StatusOK,
 		Message:    "Xử lý thành công",
