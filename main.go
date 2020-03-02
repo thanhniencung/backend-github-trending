@@ -2,23 +2,41 @@ package main
 
 import (
 	"backend-github-trending/db"
+	_ "backend-github-trending/docs"
 	"backend-github-trending/handler"
 	"backend-github-trending/helper"
-	log "backend-github-trending/log"
+	"backend-github-trending/log"
 	"backend-github-trending/repository/repo_impl"
 	"backend-github-trending/router"
 	"fmt"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
+	"github.com/swaggo/echo-swagger"
 	"os"
 	"time"
 )
 
 func init() {
-	fmt.Println(">>>>", os.Getenv("APP_NAME"))
-	//os.Setenv("APP_NAME", "github")
+	os.Setenv("APP_NAME", "github")
 	log.InitLogger(false)
 }
 
+// @title Github Trending API
+// @version 1.0
+// @description More
+// @termsOfService http://swagger.io/terms/
+// @contact.name API Support
+// @contact.url http://www.swagger.io/support
+// @contact.email support@swagger.io
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+
+// @securityDefinitions.apikey jwt
+// @in header
+// @name Authorization
+
+// @host localhost:3000
+// @BasePath /
 func main() {
 	sql := &db.Sql{
 		Host:     "localhost", //localhost,host.docker.internal
@@ -31,6 +49,7 @@ func main() {
 	defer sql.Close()
 
 	e := echo.New()
+	e.GET("/swagger/*", echoSwagger.WrapHandler)
 
 	structValidator := helper.NewStructValidator()
 	structValidator.RegisterValidate()

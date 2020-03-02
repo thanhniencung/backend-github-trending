@@ -1,0 +1,2 @@
+time="2020-02-10T21:32:42.189188+07:00" level=error msg="Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/workspace/code4func/backend-github-trending/handler/user_handler.go line=32
+time="2020-02-10T21:34:53.965083+07:00" level=error msg="Mật khẩu tối thiểu 8 kí tự" file=/Users/ryan/workspace/code4func/backend-github-trending/handler/user_handler.go line=32

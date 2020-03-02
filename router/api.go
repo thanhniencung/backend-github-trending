@@ -3,7 +3,7 @@ package router
 import (
 	"backend-github-trending/handler"
 	"backend-github-trending/middleware"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 )
 
 type API struct {
