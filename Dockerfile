@@ -13,6 +13,8 @@ WORKDIR $GOPATH/src/backend-github-trending
 COPY . .
 
 RUN go mod init backend-github-trending
+
+WORKDIR cmd/pro
 RUN GOOS=linux go build -o app
 
 ENTRYPOINT ["./app"]

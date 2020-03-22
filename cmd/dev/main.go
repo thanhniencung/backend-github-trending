@@ -16,6 +16,7 @@ import (
 )
 
 func init() {
+	fmt.Println("DEV ENVIROMENT")
 	os.Setenv("APP_NAME", "github")
 	log.InitLogger(false)
 }

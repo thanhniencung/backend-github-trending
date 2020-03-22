@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3573c891-e0d9-4170-bbd7-27582347b2c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmd/pro/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/repo_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/repo_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/user_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/jwt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/dev/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +39,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/handler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmd/pro" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmd/pro" />
+      <recent name="$PROJECT_DIR$/cmd/dev" />
       <recent name="$PROJECT_DIR$/handler" />
       <recent name="$PROJECT_DIR$/banana" />
       <recent name="$PROJECT_DIR$/repository/repo_impl" />
-      <recent name="$PROJECT_DIR$/helper" />
     </key>
   </component>
   <component name="RunManager">
